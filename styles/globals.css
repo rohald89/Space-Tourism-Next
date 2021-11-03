@@ -94,9 +94,13 @@ body {
   background-color: hsl( var(--clr-dark) );
   line-height: 1.5;
   min-height: 100vh;
+  overflow-x: hidden;
+}
+
+#__next {
   display: grid;
   grid-template-rows: min-content 1fr;
-  overflow-x: hidden;
+  height: 100vh;
 }
 
 /* make images easier to work with */
