@@ -274,8 +274,6 @@ select {
 /* primary-header */
 .logo {
   margin: 1.5rem clamp(1.5rem, 5vw, 3.5rem);
-  /* height: 48px;
-  width: 48px; */
 }
 
 .primary-header {
