@@ -56,22 +56,9 @@ const crew = () => {
         fly to the ISS, and the first Iranian in space.</p>
     </article> 
     
-    {/* <picture id="commander-image">
-      <source srcSet="/public/crew/image-douglas-hurley.webp" type="image/webp"/>
-      <Image src="/../public/crew/image-douglas-hurley.png" alt="Douglas Hurley" layout="fill"/>
-    </picture>
-    <picture hidden id="mission-image">
-      <source srcSet="/public/crew/image-mark-shuttleworth.webp" type="image/webp"/>
-      <Image src="/public/crew/image-mark-shuttleworth.png" alt="Douglas Hurley" layout="fill"/>
-    </picture>
-    <picture hidden id="pilot-image">
-      <source srcSet="/public/crew/image-victor-glover.webp" type="image/webp"/>
-      <Image src="/public/crew/image-victor-glover.png" alt="Douglas Hurley" layout="fill"/>
-    </picture>
-    <picture hidden id="crew-image">
-      <source srcSet="/public/crew/image-anousheh-ansari.webp" type="image/webp"/>
-      <Image src="/public/crew/image-anousheh-ansari.png" alt="Douglas Hurley" layout="fill"/>
-    </picture> */}
+    <div className="image">
+      <Image src="/../public/crew/image-douglas-hurley.png" alt="Douglas Hurley" width={514} height={700}/>
+    </div>
   </main>
     )
 }

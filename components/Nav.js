@@ -4,6 +4,7 @@ import Link from "next/link";
 
 const Nav = () => {
     const {pathname} = useRouter();
+    const currentPath = pathname === '/' ? 'home' : pathname.slice(1);
     const [ isOpen, setIsOpen ] = useState(false);
 
     const toggleMenu = (e) => {
@@ -18,7 +19,7 @@ const Nav = () => {
             <nav>
                 <ul id="primary-navigation" data-visible={isOpen} className="primary-navigation underline-indicators flex">
                     { pages.map((page, i) => (
-                        <li key={page} className={pathname === page ? 'active' : ''}>
+                        <li key={page} className={currentPath === page ? 'active' : ''}>
                             <Link href={`${page === 'home' ? "/" : `/${page}`}`}>
                                 <a className="ff-sans-cond uppercase text-white letter-spacing-2"><span aria-hidden="true">0{i}</span>{page}</a>
                             </Link>
