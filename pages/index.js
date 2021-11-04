@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function Home() {
 
   return (
@@ -11,7 +13,9 @@ export default function Home() {
           because we'll give you a truly out of this world experience! </p>
         </div>
         <div>
-          <a href="destination.html" className="large-button uppercase ff-serif text-dark bg-white">Explore</a>
+          <Link href="destination">
+            <a className="large-button uppercase ff-serif text-dark bg-white">Explore</a>
+          </Link>
         </div>
     </main>
     </>
