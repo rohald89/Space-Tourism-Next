@@ -32,7 +32,6 @@ const destination = () => {
                 setActiveTab={setActiveTab}
                 tabs={tabs}
                 page={page}
-                srOnly={false}
                 type={'underline'}
             />
 

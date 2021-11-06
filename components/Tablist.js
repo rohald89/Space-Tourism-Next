@@ -1,4 +1,11 @@
-const Tablist = ({ activeTab, setActiveTab, tabs, page, srOnly, type }) => {
+const Tablist = ({
+    activeTab,
+    setActiveTab,
+    tabs,
+    page,
+    srOnly = false,
+    type,
+}) => {
     const tabFocus = activeTab;
 
     const changeTabFocus = (e) => {
@@ -35,7 +42,11 @@ const Tablist = ({ activeTab, setActiveTab, tabs, page, srOnly, type }) => {
                     aria-selected={activeTab === index}
                     role="tab"
                     aria-controls={`${tab}-tab`}
-                    className="uppercase ff-sans-cond text-accent letter-spacing-2"
+                    className={
+                        type === 'numbered'
+                            ? 'text-white ff-serif fs-600'
+                            : 'uppercase ff-sans-cond text-accent letter-spacing-2'
+                    }
                     tabIndex={tabFocus === index ? 0 : -1}
                     data-image={`${tab}-image`}
                     onClick={() => {
@@ -43,7 +54,13 @@ const Tablist = ({ activeTab, setActiveTab, tabs, page, srOnly, type }) => {
                     }}
                     onKeyDown={changeTabFocus}
                 >
-                    {srOnly ? <span className="sr-only">{tab}</span> : tab}
+                    {srOnly && type !== 'numbered' ? (
+                        <span className="sr-only">{tab}</span>
+                    ) : type === 'numbered' ? (
+                        index + 1
+                    ) : (
+                        tab
+                    )}
                 </button>
             ))}
         </div>
