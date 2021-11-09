@@ -37,7 +37,7 @@ const destination = () => {
 
             <article
                 className="destination-info flow"
-                id={`${destinationData.name}-tab`}
+                id={`${tabs[activeTab]}-tab`}
                 tabIndex="0"
                 role="tabpanel"
             >
