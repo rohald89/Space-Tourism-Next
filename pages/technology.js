@@ -3,7 +3,7 @@ import { useState } from 'react';
 import Tablist from '../components/Tablist';
 import data from '../data';
 
-const technology = () => {
+const Technology = () => {
     const page = 'technology';
     const [activeTab, setActiveTab] = useState(0);
     const techData = data.technology[activeTab];
@@ -55,4 +55,4 @@ const technology = () => {
     );
 };
 
-export default technology;
+export default Technology;

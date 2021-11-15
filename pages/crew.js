@@ -3,7 +3,7 @@ import { useState } from 'react';
 import Tablist from '../components/Tablist';
 import data from '../data';
 
-const crew = () => {
+const Crew = () => {
     const page = 'crew';
     const [activeTab, setActiveTab] = useState(0);
     const crewData = data.crew[activeTab];
@@ -51,4 +51,4 @@ const crew = () => {
     );
 };
 
-export default crew;
+export default Crew;

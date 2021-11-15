@@ -3,7 +3,7 @@ import { useState } from 'react';
 import Tablist from '../components/Tablist';
 import data from '../data';
 
-const destination = () => {
+const Destination = () => {
     const page = 'destination';
     const [activeTab, setActiveTab] = useState(0);
     const destinationData = data.destinations[activeTab];
@@ -70,4 +70,4 @@ const destination = () => {
     );
 };
 
-export default destination;
+export default Destination;
