@@ -11,7 +11,7 @@ const Nav = () => {
         setIsOpen((prev) => !prev);
     };
 
-    const pages = ['Home', 'Destination', 'Crew', 'Technology'];
+    const pages = ['home', 'destination', 'crew', 'technology'];
 
     return (
         <>
@@ -35,7 +35,7 @@ const Nav = () => {
                             className={currentPath === page ? 'active' : ''}
                         >
                             <Link
-                                href={`${page === 'Home' ? '/' : `/${page}`}`}
+                                href={`${page === 'home' ? '/' : `/${page}`}`}
                             >
                                 <a
                                     onClick={toggleMenu}
